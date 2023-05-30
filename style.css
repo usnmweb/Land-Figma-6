@@ -1,0 +1,41 @@
+.container {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+}
+
+.card {
+  border: 3px black solid;
+  height: 700px;
+  position: relative;
+}
+
+.f-card {
+  background-color: red;
+  width: 300px;
+  height: 350px;
+  border-radius: 20px;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  z-index: 1;
+}
+
+.r-card {
+  border: 3px black solid;
+  width: 200px;
+  height: 350px;
+  border-radius: 20px;
+  position: absolute;
+  left: 45%;
+  top: 32%;
+}
+
+.l-card {
+  border: 3px black solid;
+  width: 300px;
+  height: 350px;
+  border-radius: 20px;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+}
