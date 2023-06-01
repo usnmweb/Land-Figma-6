@@ -4,9 +4,9 @@
 }
 
 .card {
-  border: 3px black solid;
   height: 700px;
   position: relative;
+  right: 3em;
 }
 
 .f-card {
@@ -20,18 +20,25 @@
   z-index: 1;
 }
 
+.f-card > img {
+  border: 3px black solid;
+  border-radius: 20px;
+}
+
 .r-card {
   border: 3px black solid;
+  background-color: black;
   width: 200px;
   height: 250px;
   border-radius: 20px;
   position: absolute;
-  left: 45%;
+  left: 53%;
   bottom: 20%;
 }
 
 .l-card {
   border: 3px black solid;
+  background-color: black;
   width: 300px;
   height: 350px;
   border-radius: 20px;
@@ -42,8 +49,9 @@
 
 .rel {
   position: relative;
-  width: 300px;
+  width: 354.8px;
   height: 350px;
+  top: -350px;
 }
 
 .tagl {
@@ -66,4 +74,88 @@
 
 .txt {
   color: white;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4em;
+}
+.left > h1 {
+  max-width: 700px;
+  font-size: 70px;
+  font-family: "Playfair Display";
+  margin-bottom: 2rem;
+}
+
+.left > p {
+  max-width: 700px;
+  font-size: 20px;
+  margin-top: 0;
+  font-family: "Work Sans";
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.img-box {
+  margin: 2em;
+  width: 60px;
+  height: 60px;
+  border: 1px black solid;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.img-box > img {
+  margin-top: 1px;
+  max-width: 60px;
+  border-radius: 50%;
+}
+.logo > span {
+  margin-top: -2em;
+}
+
+.b-l {
+  border: black;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 120px;
+  margin-right: 1rem;
+}
+
+.b-r {
+  border: 2px black solid;
+  background-color: white;
+  color: black;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.data {
+  border: 3px black solid;
+  border-radius: 20px;
+  margin-top: 2rem;
+  max-width: 700px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.icon {
+  display: grid;
+  justify-items: center;
+}
+
+.icon-img {
+  max-width: 30px;
+  margin-top: 7px;
+}
+
+.icon > p {
+  text-align: center;
 }
